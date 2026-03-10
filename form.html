@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_form.css">
+    <title>Contactanos- Crepas Calif</title>
+    <link rel="shortcut icon" href="logo nuevo_preview_rev_3 (1).png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+
+    <header class="header">
+        <a href="#" class="logo"><img src="logo nuevo_preview_rev_3 (1).png" alt="" id="login"></a>
+  
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+
+    <nav class="navbar">
+        <a href="INICIO.html" style="--i:0;">Inicio</a>
+        <a href="Historia.html" style="--i:1;">Conocenos</a>
+        <a href="#" style="--i:2;">Menú</a>
+        <a href="#" style="--i:3;">Galería</a>
+        <a href="form.html" style="--i:4;">Contactanos</a>
+    </nav>
+
+    <i class='bx bxs-user-circle' id="botoncito3"></i>
+
+
+     </header>
+
+
+    <div id="titulo"> <span>Contactanos</span></div>
+
+<div id="cuadro">
+
+
+    <div id="persona">
+        <img src="personita.jpg" alt="">
+        </div>
+
+
+<form action="" name="formulario" id="formulario">
+
+<div id="p1">
+    <div id="titulo2">Datos personales</div>
+    
+
+    <div class="form_group-100">
+        <input type="text" id="nombre" class="input-100" placeholder=" ">
+        <label for="nombre" class="form_label">Nombre completo:</label>
+        <span class="form_line"></span>
+    </div>
+
+
+
+    
+    <div class="form_group-49">
+        <input type="email" id="em" class="input-49" placeholder=" ">
+        <label for="em" class="form_label">Email:</label>
+        <span class="form_line"></span>
+    </div>
+
+
+       
+    <div class="form_group-49">
+        <input type="text" id="tele" class="input-49" placeholder=" ">
+        <label for="tele" class="form_label">Telefono:</label>
+        <span class="form_line"></span>
+    </div>
+
+
+    <div class="form_group-100" id="antes_titulo">
+        <input type="text" id="mensaje" class="input-100" placeholder=" ">
+        <label for="mensaje" class="form_label">Mensaje:</label>
+        <span class="form_line"></span>
+    </div>
+
+   
+
+
+  
+
+
+
+   
+
+</div>
+
+
+
+
+<div id="p2">
+
+    <div id="titulo2">Información que desea obtener</div>
+<select name="asunto" id="asunto" class="input49" placeholder="Selecciona un Asunto" onchange="mostrar()">
+    <option value=""></option>
+    <option value="dudas">Dudas sobre Pedidos o Envios a Domicilio</option>
+    <option value="evento">Planeación de un evento</option>
+    <option value="otro">Otro</option>
+</select>
+
+<div id="mostrar2" style="display: none;">
+
+    <div id="texto_mostrar">¿Qué es lo que desea Preguntar?</div>
+    
+    <div class="form_group-100" id="evento_input">
+        <input type="text" id="precio" class="input-100" placeholder=" ">
+        <label for="precio" class="form_label">Redacte su peticion:</label>
+        <span class="form_line"></span>
+    </div>    
+</div>
+
+
+    <div id="mostrar_otro" style="display: none;">
+
+
+        <div id="texto_mostrar">¿Cuál es la duda que tiene?</div>
+     
+        
+
+        <div class="form_group-100" id="evento_input">
+            <input type="text" id="duda" class="input-100" placeholder=" ">
+            <label for="duda" class="form_label">Redacte su peticion:</label>
+            <span class="form_line"></span>
+        </div>    
+    
+    </div>
+
+
+
+        <div id="mostrar_evento">
+            <div id="titulo_evento">Datos del evento</div>
+    <input type="date" id="fecha_evento" name="fecha2" class="input4">
+    
+    
+
+    <div class="form_group-100" id="evento_input">
+        <input type="text" id="tipo_evento" class="input-100" placeholder=" ">
+        <label for="tipo_evento" class="form_label">Ingrese el tipo de evento:</label>
+        <span class="form_line"></span>
+    </div> 
+
+
+
+ 
+
+
+
+<div id="radios2">
+
+
+<div id="titulo_productos">Elija los Platillos</div>
+       <input type="checkbox" name="productos" id="crepas" class="check"> <label for="crepas">Crepas</label>
+       <input type="checkbox" name="productos" id="alitas" class="check"><label for="alitas">Alitas</label>
+       <input type="checkbox" name="productos" id="frappes" class="check"><label for="frappes">Frappes</label>
+       <input type="checkbox" name="productos" id="papas" class="check"><label for="papas">Papás</label>
+
+</div>
+
+       <div id="titulo_otro">¿Desea ajustar otro detalle del evento?</div>
+
+      
+       <div class="form_group-100" id="evento_input">
+        <input type="text" id="otros_detalles" class="input-100" placeholder=" ">
+        <label for="otros_detalles" class="form_label">Redacte algun detalle que quiera ajustar:</label>
+        <span class="form_line"></span>
+    </div>
+
+
+
+
+
+        </div>
+</div>
+
+
+
+
+<div id="p3">
+<div id="titulo3">¿Cómo desea ser contactado?</div>
+
+
+<div id="botones">
+
+    <div id="radios">
+        <input type="radio" name="seleccion" class="radio" id="telefono" onclick="radios()">
+    <div id="telefono2">Teléfono</div>
+</div>
+<div id="radios">
+    <input type="radio" name="seleccion" class="radio" id="email" onclick="radios()">
+    <div id="email2">Email</div>  
+  </div>
+   
+</div>
+
+
+<div class="form_group-100" id="campo1" style="display: none;">
+    <input type="text" id="phone" class="input-100" placeholder="">
+    <label for="phone" class="form_label">Telefono:</label>
+    <span class="form_line"></span>
+</div> 
+
+<div class="form_group-100" id="campo2" style=" display: none;">
+    <input type="email" id="mail" class="input-100" placeholder="">
+    <label for="mail" class="form_label">Email:</label>
+    <span class="form_line"></span>
+</div> 
+
+
+<div id="elegir">Seleccione la fecha y la hora</div>
+
+<input type="date" name="fecha" class="" id="fecha">
+</div>
+
+
+
+<div id="bon">
+    <input type="submit" id="boton" class="boton" name="Enviar" >
+</div>
+
+
+
+
+</form>
+
+
+
+
+
+
+</div>
+
+<iframe src="footer.html" frameborder="0" class="footer"></iframe>
+
+
+
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>INICIA SESION</h3>
+        <h4>y navega sin limites en el sitio web.</h4>
+        <form action="">
+            <div class="contenedor-inputs">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <input type="submit" class="btn-submit" value="Iniciar Sesion">
+        </form>
+    </div>
+</div>
+
+
+<script src="script_principal.js" ></script>
+
+
+
+
+
+<script>
+    var getimport = document.querySelector('link[rel="import"]').import;
+var getcontent = getimport.import.querySelector("#pie");
+document.body.appendChild(document.importNode(getcontent,true));
+</script>
+<script>
+function mostrar(){
+    var seleccion = document.getElementById("asunto").value;
+if(seleccion==""){
+    document.getElementById('mostrar2').style.display='none';
+    document.getElementById('mostrar_otro').style.display='none';
+    document.getElementById("mostrar_evento").style.display="none";
+}
+
+    if(seleccion == "dudas"){
+    document.getElementById('mostrar2').style.display='block';
+    document.getElementById('mostrar_otro').style.display='none';
+    document.getElementById("mostrar_evento").style.display="none";
+}
+if(seleccion == "evento"){
+    document.getElementById('mostrar_otro').style.display='none';
+    document.getElementById('mostrar2').style.display='none';
+document.getElementById("mostrar_evento").style.display="block";
+
+
+  
+}
+
+if(seleccion == "otro"){
+    document.getElementById('mostrar_otro').style.display='block';
+    document.getElementById('mostrar2').style.display='none';
+    document.getElementById("mostrar_evento").style.display="none";
+}
+
+
+
+
+
+}
+
+function radios(){
+    var tel = document.querySelector("#telefono");
+    var em = document.querySelector("#email");
+var fecha = document.querySelector("#fecha");
+var texto_f= document.querySelector("#elegir");
+
+    var campo1 = document.querySelector("#campo1");
+    var campo2 = document.querySelector("#campo2");
+
+    if(tel.checked){
+          
+            campo1.style.display = "block";
+            campo2.style.display = "none";
+            
+            fecha.style.display = "block";
+            texto_f.style.display = "block";
+    }
+    if(em.checked){
+       
+            fecha.style.display = "none";
+            texto_f.style.display = "none";
+
+            campo2.style.display = "block";
+            campo1.style.display = "none";
+    }
+}
+</script>
+
+
+
+<script src="popup.js"></script>
+
+
+
+</body>
+</html>

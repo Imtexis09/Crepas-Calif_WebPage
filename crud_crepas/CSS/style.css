@@ -1,0 +1,431 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Formulario de usuarios */
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 450px;
+    box-shadow: 4px 4px 10px -1px rgba(0, 0, 0);
+    border-radius: 20px;
+}
+
+
+.formulario_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+ 
+}
+
+.formulario_grupo-input{
+position: relative;
+
+
+}
+
+.formulario_input{
+    border: 3px solid transparent;
+height: 25px;
+line-height: 45px;
+padding: 0 40px 0 10px;
+transition: .3s ease all;
+}
+
+.formulario_input:focus{
+    border: 0;
+border-bottom: 3px solid #0075ff;
+outline: none;
+background:none;
+
+}
+
+.formulario_input_error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+margin-top: 0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formulario_input_error-activo{
+display: block;
+}
+
+.formulario_validacion_estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: -1;
+    font-size: 17px;
+    opacity: 0;
+   
+
+}
+
+.formulario_grupo-terminos,
+.formulario_mensaje,
+.formulario_grupo-btn-enviar{
+grid-column: span 2;
+}
+
+.formulario_mensaje{
+    height:45px ;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: 0;
+    margin-top: 10px;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+.formulario_mensaje-activo{
+display: block;
+}
+
+.formulario_mensaje p{
+margin: 0;
+}
+
+.formulario_grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.formulario_btn
+{
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    background:rgb(20, 4, 70);
+    color:#fff;
+    font-weight: bold;
+    border:none ;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+
+}
+
+.formulario_btn:hover
+{
+box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+
+}
+#grupo_terminos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario_mensaje-exito{
+    font-size: 15px;
+    color:#119200;
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.formulario_mensaje-exito-activo{
+display: block;
+
+}
+
+
+.formulario_grupo-correcto  .formulario_validacion_estado{
+color:#1ed12d;
+opacity: 1;
+}
+
+.formulario_grupo-incorecto  .formulario_label{
+    color:#bb2929;
+   
+    }
+
+
+    .formulario_grupo-incorecto  .formulario_validacion_estado{
+        color:#bb2929;
+        opacity: 1;
+        }
+
+
+        .formulario_grupo-incorecto  .formulario_input{
+           border: 0;
+           background:none;
+            border-bottom: 3px solid #bb2929;
+            }
+
+
+
+            /*
+            CODIGO PARA VER SI BAJA O NO O SI SUBE XD*/
+
+            
+.formulario_grupo-input{
+    position: relative;
+    --color:#0f0d0d7e;
+    margin-bottom: 7px;
+}
+.formulario_input{
+ 
+    background: none;
+    color:#0f0d0d7e;
+    font-size: 1em;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color);
+    font-family: Montserrat;
+
+}
+
+
+.formulario_input:not(:placeholder-shown){
+color:#010101;
+}
+
+
+.formulario_input:focus ~ .form_label , .formulario_input:not(:placeholder-shown) ~ .form_label{
+transform: translateY(-12px) scale(.7);
+transform-origin: left top;
+color: #3866f2;
+font-size: 1em;
+
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left: 5px;
+    transform: translateY(10px);
+transition: transform .5s, color .3s;
+font-family: Montserrat;
+font-size: 0.8em;
+}
+
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+transform: scale(0);
+transform: left bottom;
+transition: transform .4s;
+
+}
+
+.formulario_input:focus ~ .form_line , .formulario_input:focus:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+
+
+    #grupo_descripcion{
+        width: 100%;
+        margin-bottom: 30px; 
+    }
+    #grupo_id_producto,#grupo_nombre,#grupo_tipo,#grupo_precio,#grupo_seccion,#grupo_solicitud{
+        width: 48%;
+        margin-bottom: 30px;
+        }
+    
+    
+    #descripcion{
+        width: 100%;
+    }
+    #grupo_solicitud{
+        width: 48%;
+        margin-bottom: -20px;
+        height: 40px;
+        }
+    #seccion,#solicitud{
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+
+    }
+    
+
+
+
+/* Tabla de usuarios */
+.tabla_registros {
+    overflow: auto;
+    max-height: 560px; /* Ajusta esto según sea necesario */
+}
+
+.tabla_registros table {
+    border: 2px solid #ffffff;
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 98%;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+.tabla_registros table thead th {
+    background: linear-gradient(to bottom, #A500EB 5%, #E373FF 100%);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-left: 0px solid #FFE0E0;
+    padding: 17px 17px;
+    position: sticky; /* Hace que el encabezado sea pegajoso */
+    top: -2px; /* Fija el encabezado en la parte superior */
+    z-index: 1000; /* Asegura que el encabezado esté sobre el contenido */
+}
+
+.tabla_registros table tbody tr:nth-child(even) {
+    background-color: #a500eb19;
+}
+
+.tabla_registros table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tabla_registros table tbody td {
+    color: #000000;
+    border-left: 1px solid #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 17px;
+}
+
+.tabla_registros table tbody .alt td {
+    background: rgba(215, 128, 255, 0.082);
+    color: #000000;
+}
+
+.tabla_registros table tbody td:first-child {
+    border-left: none;
+}
+
+.tabla_registros table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla_registros table tfoot td div {
+    border-top: 1px solid #ffffff;
+    background: #f4e3ff;
+    padding: 14px;
+    font-size: 10px;
+}
+
+.tabla_registros table tfoot td {
+    padding: 0;
+    font-size: 10px;
+}
+
+.tabla_registros table tfoot td div {
+    padding: 20px;
+}
+
+.tabla_registros table tfoot td ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.tabla_registros table tfoot li {
+    display: inline;
+}
+
+
+
+
+
+/* Estilo del botón Editar */
+.editar {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #ff6d2a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    width: 60%;
+    margin: -10px;
+}
+
+.editar:hover {
+    background-color: #f35f1a;
+}
+
+/* Estilo del botón Eliminar */
+.eliminar {
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 14px;
+    background-color: rgb(183, 13, 13);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    width: 60%;
+    margin: -10px;
+}
+
+.eliminar:hover {
+    background-color: rgb(210, 24, 24);
+}
+
+/* Imágenes */
+img {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 800;
+    color: rgb(122, 0, 150);
+}
+
+#t1 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 14px;
+    color: #000000;
+}

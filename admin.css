@@ -1,0 +1,368 @@
+
+.resultado_sesion-admin-activo{
+    display: block;
+}
+
+.resultado_sesion-admin{
+    background-color:#f66060;
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    border-radius: 3px;
+display: none;
+    line-height: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+.alert{
+    display: inline-block;
+    margin-left: 6px;
+}
+/*CODIGO DE LOS INPUT PARA LOS ERRORES AL MOMENTO DE ENVIAR*/
+
+
+#grupo_usuario3, #grupo_password31{
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    
+    #usuario3,#password31{
+        width: 100%;
+    }
+    
+    #usuario3-grupo,#contra31-grupo{
+        width: 100%;
+    }
+    
+    
+    
+    .formulario_mensaje_sesion_admin{
+        height:45px ;
+        line-height: 45px;
+        background: #f66060;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: 0;
+        display: none;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .formulario_mensaje_sesion_admin-activo{
+    display: block;
+    }
+    
+    .formulario_mensaje_sesions_admin p{
+    margin: 0;
+    }
+
+
+/*CODIGO DEL FORMULARIO*/
+
+
+.form-link {
+    text-align: center;
+    position:relative;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: #000000;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 1.15em;
+    letter-spacing: 0.5px;
+
+}
+
+.form-link #activar {
+    font-family: "Franklin Gothic Heavy";
+    color: #190a6d;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform .5s,text-decoration .4s;
+    cursor: pointer;
+}
+
+.form-link #activar:hover {
+    text-decoration: underline;
+    transform: scale(0.9);
+    letter-spacing: 0.5px;
+}
+
+.form-link #activar:active{
+    transform: scale(0.85);
+    letter-spacing: 0.5px;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 20px;
+max-width: 600px;
+box-shadow: 4px 4px 10px -1px rgba(0, 0, 0);
+border-radius: 20px;
+    
+}
+
+.formulario_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    
+    cursor: pointer;
+ 
+}
+
+.formulario_grupo-input{
+position: relative;
+
+
+}
+
+.formulario_input{
+   
+   
+    border: 3px solid transparent;
+height: 45px;
+line-height: 45px;
+padding: 0 40px 0 10px;
+transition: .3s ease all;
+}
+
+.formulario_input:focus{
+    border: 0;
+border-bottom: 3px solid #0075ff;
+outline: none;
+background:none;
+
+}
+
+.formulario_input_error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+margin-top: 0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formulario_input_error-activo{
+display: block;
+}
+
+.formulario_validacion_estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: -1;
+    font-size: 16px;
+    opacity: 0;
+   
+
+}
+.formulario_checkbox{
+  margin-right: 10px;  
+}
+
+.formulario_grupo-terminos,
+.formulario_mensaje,
+.formulario_grupo-btn-enviar{
+grid-column: span 2;
+}
+
+.formulario_mensaje{
+    height:45px ;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: 0;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.formulario_mensaje-activo{
+display: block;
+}
+
+.formulario_mensaje p{
+margin: 0;
+}
+
+.formulario_grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.formulario_btn
+{
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    background:#000;
+    color:#fff;
+    font-weight: bold;
+    border:none ;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+
+}
+
+.formulario_btn:hover
+{
+box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+
+}
+#grupo_terminos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario_mensaje-exito{
+    font-size: 14px;
+    color:#119200;
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.formulario_mensaje-exito-activo{
+display: block;
+
+}
+
+/*Validacion*/
+.formulario_grupo-correcto  .formulario_validacion_estado{
+color:#1ed12d;
+opacity: 1;
+}
+
+.formulario_grupo-incorecto  .formulario_label{
+    color:#bb2929;
+   
+    }
+
+
+    .formulario_grupo-incorecto  .formulario_validacion_estado{
+        color:#bb2929;
+        opacity: 1;
+        }
+
+
+        .formulario_grupo-incorecto  .formulario_input{
+           border: 0;
+           background:none;
+            border-bottom: 3px solid #bb2929;
+            }
+
+
+
+            /*
+            CODIGO PARA VER SI BAJA O NO O SI SUBE XD*/
+
+            
+.formulario_grupo-input{
+    position: relative;
+    --color:#0f0d0d7e;
+    margin-bottom: 7px;
+}
+.formulario_input{
+ 
+    background: none;
+    color:#0f0d0d7e;
+    font-size: 1em;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--color);
+    font-family: Montserrat;
+
+}
+
+
+.formulario_input:not(:placeholder-shown){
+color:#010101;
+}
+
+
+.formulario_input:focus ~ .form_label , .formulario_input:not(:placeholder-shown) ~ .form_label{
+transform: translateY(-12px) scale(.7);
+transform-origin: left top;
+color: #3866f2;
+font-size: 1.2em;
+
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left: 5px;
+    transform: translateY(10px);
+transition: transform .5s, color .3s;
+font-family: Montserrat;
+}
+
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+transform: scale(0);
+transform: left bottom;
+transition: transform .4s;
+
+}
+
+.formulario_input:focus ~ .form_line , .formulario_input:focus:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+@media screen and (max-width:575px) {
+
+    .formulario_mensaje_sesion_admin{
+        height:86px ;
+        line-height: 45px;
+        background: #f66060;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: 0;
+        display: none;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .formulario_mensaje_sesion_admin-activo{
+    display: block;
+    }
+    
+    .formulario_mensaje_sesions_admin p{
+    margin: 0;
+    }
+
+
+
+
+}
+
+
+

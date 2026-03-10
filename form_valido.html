@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="valido.css">
+
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/5b728b9248.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    
+<form action="" id="formulario" class="formulario">
+
+<div class="formulario_div" id="grupo_usuario">
+
+    <label for="usuario" coass="formulario_label">Usuario</label>
+
+<div class="formulario_grupo-input">
+    <input type="text" class="formulario_input" name="usuario" id="usuario" placeholder="">
+    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+</div>
+
+<p class="formulario_input_error">El usuario tiene que tener de 4 a 16 digitos, solo usa numeros y guion bajo</p>
+
+</div>
+
+
+<div class="formulario_div" id="grupo_nombre">
+
+    <label for="nombre" coass="formulario_label">Nombre</label>
+
+<div class="formulario_grupo-input">
+    <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder=" ">
+    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+</div>
+
+<p class="formulario_input_error">El usuario tiene que tener de 4 a 16 digitos, solo usa numeros y guion bajo</p>
+
+</div>
+
+
+
+<div class="formulario_div" id="grupo_password">
+    <label for="password" coass="formulario_label">Contraseña</label>
+
+<div class="formulario_grupo-input">
+    <input type="password" class="formulario_input" name="password" id="password" placeholder=" ">
+    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+</div>
+
+<p class="formulario_input_error">La contraseña tiene que ser de 4 a 16 digitos</p>
+
+</div>
+
+
+
+<div class="formulario_div" id="grupo_password2">
+    <label for="password2" coass="formulario_label">Reafirmar Contraseña</label>
+
+<div class="formulario_grupo-input">
+    <input type="password" class="formulario_input" name="password2" id="password2" placeholder=" ">
+    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+</div>
+
+<p class="formulario_input_error">Ambas contraseñas deben ser iguales</p>
+
+</div>
+
+
+
+
+
+<div class="formulario_div" id="grupo_correo">
+    <label for="correo" coass="formulario_label">Correo Electronico</label>
+
+<div class="formulario_grupo-input">
+    <input type="email" class="formulario_input" name="correo" id="correo" placeholder=" ">
+    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+</div>
+
+<p class="formulario_input_error">El correo solo puede contener letras, numeros, puntos guiones y guion bajo</p>
+
+</div>
+
+
+
+
+<!--TELEFoNO--->
+<div class="formulario_div" id="grupo_telefono">
+    <label for="telefono" coass="formulario_label">Telefono</label>
+
+<div class="formulario_grupo-input">
+    <input type="text" class="formulario_input" name="telefono" id="telefono" placeholder=" ">
+    <i class="formulario_validacion_estado fa-solid fa-circle-xmark"></i>
+</div>
+
+<p class="formulario_input_error">El telefono solo puedde contener numeros y el maximo son 14 digitos</p>
+
+</div>
+
+
+<!---TERMINOS Y CONDICIONES-->
+
+<div class="formulario_grupo" id="grupo_terminos">
+
+<label class="formulario_label">
+    <input type="checkbox" name="terminos" id="terminos" class="formulario_checkbox">
+    Acepto los terminos y condiciones
+</label>
+</div>
+
+<div class="formulario_mensaje" id="formulario_mensaje">
+
+<p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Porfavor rellene el formulario de manera correcta</p>
+
+</div>
+
+
+<div class="formulario_grupo formulario_grupo-btn-enviar">
+
+
+<input type="submit" class="formulario_btn" value="Enviar">
+
+<p class="formulario_mensaje-exito" id="formulario_mensaje-exito">
+El formulario se envio exitosamente
+</p>
+</div>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="valido.js"></script>
+
+</html>

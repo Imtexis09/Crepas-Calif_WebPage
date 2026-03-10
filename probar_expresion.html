@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+</head>
+<body>
+    
+
+
+    <div>
+<select name="selector" id="select">
+<option value=""></option>
+    <option value="Opcion1">Opcion1</option>
+    <option value="Opcion2">Opcion2</option>
+</select>
+
+
+<input type="text" name="hola">
+</div>
+    <script>
+var valor = document.getElementById("select");
+
+valor.addEventListener("click",function(){
+    console.log(valor.value);
+});
+
+
+const validarform = (e) => {
+switch (e.target.name){
+    case"selector":
+    console.log("si jalo");
+    break;
+
+    case"hola":
+    console.log("si jalo");
+    break;
+}
+
+}
+
+
+
+    </script>
+</body>
+</html>

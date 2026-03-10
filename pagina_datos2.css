@@ -1,0 +1,1099 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+    
+}
+
+/*LO DE EL ARREGLO Y MANEJO DE LOS CODIGOS DE FACTURA*/
+
+#pegar_nuevo_codigo{
+    display: none;
+}
+
+/*la alerta negra*/
+
+#swal2-title{
+
+    font-family: Montserrat;
+}
+
+
+/*ESCONDE LOS DATOS ESCONDIDOS DEL FORMULARIO*/
+
+#datos_enviar{
+    display: none;
+}
+
+/*ERROR DEL SELECTOR*/
+.formulario_mensaje{
+    height:45px ;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: 0;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 50%;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+.formulario_mensaje-activo{
+display: block;
+}
+
+.formulario_mensaje p{
+margin: 0;
+}
+
+/*EL RESTO DEL CODIGO*/
+
+
+.us{
+    font-family:Montserrat;
+    font-size: 1.1em;
+    color:#fff;
+    margin: 0;
+    margin-right: 0;
+    margin-left:12px;
+    text-align: center;
+ cursor: pointer;
+}
+
+
+
+.card-products{
+    overflow-y:scroll;
+    max-height: 351px;
+    padding: 4px;
+}
+.card-products::-webkit-scrollbar{
+    width: 4px;
+}
+.card-products::-webkit-scrollbar-thumb{
+    background-color: #f15151;
+    border-radius: 5px;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+
+.cart-products{
+    width: 25%;
+   
+    
+}
+
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: monospace;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+
+
+
+#Cuenta{
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.footer{
+    width: 100% !important;
+    height: 70vh !important;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    margin-bottom: -3px;
+}
+
+
+
+
+/*PARTE DEL MENU DEL USUARIO*/
+
+.us{
+    font-family:Montserrat;
+    font-size: 1.1em;
+    color:#fff;
+    margin: 0;
+    margin-right: 0;
+    margin-left:12px;
+    text-align: center;
+cursor: pointer;
+}
+
+
+#nuevo{
+
+    margin-left: -70px;
+    justify-content: space-between;
+    margin-right: 80px;
+    
+    }
+
+#botoncito3{
+    font-size: 60px;
+    color: white;
+        width: 50px;
+        background-color: none;
+        color:none;
+    margin-bottom: -35px;
+    margin-top: -35px;
+        border: none;
+        transform: scale(1);
+     transition: transform .5s;   
+        
+    }
+    #botoncito3:hover{
+        transform: scale(0.92);
+    }
+    #botoncito3:active{
+        transform: scale(0.7);
+    }
+    
+#botoncito4{
+    font-size: 60px;
+    color: white;
+        width: 50px;
+        background-color: none;
+        color:none;
+    margin-bottom: -35px;
+    margin-top: -35px;
+        border: none;
+        display: none;
+        
+    }
+    #botoncito4:hover{
+        transform: scale(0.9);
+    }
+    #botoncito4:active{
+        transform: scale(0.85);
+    }
+
+
+/*menu*/
+
+
+#botoncito3{
+    font-size: 60px;
+    color: white;
+        width: 50px;
+        background-color: none;
+        color:none;
+    margin-bottom: -35px;
+    margin-top: -35px;
+        border: none;
+        
+        
+    }
+    #botoncito3:hover{
+        transform: scale(0.9);
+    }
+    #botoncito3:active{
+        transform: scale(0.85);
+    }
+
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.9s;
+    background-color: #c030c0;;
+backdrop-filter: blur(0px);
+ z-index: 10;
+}
+header.abajo .navbar a{
+    color:#fff;
+}
+header.abajo{
+    background-color: #c030c0;;
+   
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+   
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    
+}
+.header:hover::after{
+    left: 100%;
+
+}
+.logo{
+    font-size: 1%;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: Montserrat;
+    transition: all .4s ease;
+}
+.navbar a:hover{
+    border-bottom: solid 3px red;
+
+}
+#login {
+    width: 40%;
+    margin: 0;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    padding: 0;
+
+}
+
+#check{
+    display: none;
+}
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color:#fff;
+    cursor: pointer;
+display: none;
+}
+
+
+/*CODIGO DEL HEADER COMPLETO Y DEL FOOTER*/
+
+
+
+
+
+
+.footer{
+    width: 100% !important;
+    height: 70vh !important;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    margin-bottom: -3px;
+}
+
+
+/*imagen*/
+
+
+
+
+/* POPUP*/
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+    z-index: 100;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+	width: 100%;
+
+	height: 52px;
+	font-size: 18px;
+	line-height: 52px;
+	text-align: center;
+}
+
+.popup form .btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #71036d;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+    margin-top: 20px;
+}
+
+.popup form .btn-submit:hover {
+	background: #9a219a;
+}
+
+
+/* ANIMACIONES */
+
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+
+
+
+
+/*CODIGO DEL FORMULARIO*/
+
+    /*EL US DEL INICIAR SESION PORQUE LO CONFUNDE LA COCHINADA*/
+    .us{
+        font-family:Montserrat;
+        font-size: 1.1em;
+        color:#fff;
+        margin: 0;
+        margin-right: 0;
+        margin-left:12px;
+        text-align: center;
+     cursor: pointer;
+    width: auto;
+    }
+
+
+
+    header{
+        margin-bottom: 700px;
+    }
+/*CSS DE LA TABLA DE LA FACTURA*/
+#contenedor{
+    width: 80%;
+border-radius: 15px;
+    
+    border: solid 2px black;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top:100px;
+}
+
+#titulo_factura{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: Montserrat;
+    color:#000;
+    border-bottom: black solid 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#logo{
+   display: flex;
+   
+   margin-left: 0;
+   margin-right: auto;
+   padding-bottom: 10px;
+}
+#logo_factura{
+width: 40%;
+}
+
+#datos_negocio{    
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 10px;
+color:#000;
+}
+
+#fecha_actual{
+    padding: 8px;
+    font-size: 1em;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 800;
+    display: inline-flex;
+}
+
+#no_factura{
+    padding: 8px;
+    font-size: 1em;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 800;
+    display: inline-flex;
+}
+
+#id_cliente{
+    padding: 8px;
+    font-size: 1em;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 800;
+    display: inline-flex;
+    
+}
+
+.insertar_fecha{
+    font-size: 1em;
+    font-family: Montserrat;
+font-weight: 500;
+padding-left: 8px;
+}
+.insertar_factura{
+    font-size:1em;
+    font-family: Montserrat;
+  font-weight: 500;
+  padding-left: 8px;
+}
+.insertar_id{
+    font-size: 1em;
+    font-family: Montserrat;
+   font-weight: 500;
+   padding-left: 8px;
+}
+
+
+#datos_usuario{
+
+    color:#000;
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left:auto;
+    padding: 10px;
+}
+#nom_completo{
+  padding: 8px;
+    font-size: 1em;
+    font-family: Montserrat;
+    font-weight: 800;
+    display: inline-flex;
+
+}
+
+#Direccion{
+    padding: 8px ;
+    font-size: 1em;
+    font-family: Montserrat;
+    font-weight: 800;
+ display: inline-flex;
+}
+
+
+#Telefono{
+    padding: 8px ;
+    font-size: 1em;
+    font-family: Montserrat;
+    font-weight: 800;
+  display: inline-flex;
+}
+
+
+#Email{
+    padding: 8px ;
+    font-size: 1em;
+    font-family: Montserrat;
+    font-weight: 800;
+    
+    display: inline-flex;
+}
+
+
+#nombre, #apellidos, .insertar_direccion,.insertar_telefono, .insertar_email{
+    font-size: 1em;
+    font-family: Montserrat;
+   font-weight: 500;
+   padding-left: 8px;
+}
+#apellidos{
+    padding-left: 4px;
+}
+
+
+.datos_general{display:flex;
+    justify-content: space-between;
+}
+
+
+/*CONDICIONES DE PAGO CSS*/
+
+#contenedor_fechas{
+    width: 80%;
+margin-right: auto;
+margin-left: auto;
+border-radius: 12px;
+border: black 2px solid;
+margin-top: 50px;
+margin-bottom: 30px;
+justify-content: space-between;
+display: flex;
+
+}
+.titulo_pago{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom:10px ;
+    text-align: center;
+}
+
+.forma_pago{
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: Montserrat;
+    border-right: solid 2px black;
+ 
+}
+.selecionar_pago{
+    padding-bottom: 10px;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+}
+.selecionar_pago #pago{
+width: 80%;
+font-size: 1em;
+font-family: Montserrat ;
+border: 0;
+border-bottom:solid 2px #171717;
+}
+.selecionar_pago #pago:hover , .selecionar_pago #pago:active, .selecionar_pago #pago:focus{
+    border: 0;
+    border-bottom:solid 2px #171717;
+}
+
+
+.fecha_ven{
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: Montserrat;
+    border-right: solid 2px black;
+}
+
+.titulo_fecha{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom:10px ;
+    text-align: center;
+}
+#fecha_vencido{
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-size: 1em;
+    font-family: Montserrat;
+}
+
+
+
+/*CSS DE LA TABLA DEL TICKET*/
+.tabla_datos{
+    margin-top: 30px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+.titulo_ticket{
+    font-size: 2em ;
+    font-weight: 800;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 12px;
+    padding-bottom: 20px;
+    width: 100%;
+    letter-spacing: 4px;
+}
+
+.datos_insertados{
+   border-collapse: collapse;
+   margin: 25px 0;
+    font-size: 1em; font-family: sans-serif;
+     width: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);  
+   
+}
+#descripcion{
+    width:50%;
+}
+
+.datos_insertados thead tr th {  color: #ffffff; text-align:center;
+    background-color: #980081;
+    border-spacing: 5px;
+ }
+
+
+
+
+.datos_insertados thead tr th, .datos_insertados tbody tr td { padding: 9px; 
+border-spacing: 5px;}
+
+
+
+.datos_insertados tbody tr { border-bottom: 1px solid #dddddd; } 
+
+.datos_insertados tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
+
+ .datos_insertados tbody tr:last-of-type { border-bottom: 2px solid #009879; }
+
+ #datos_finales tr td{
+    font-weight: 700;
+
+ }
+
+ /*GRUPO BOTOTNES*/
+.grupo_botones{
+    justify-content: space-between;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+ #seguir_compra{
+  font-size: 1em;
+  font-family: Montserrat;
+  font-weight: 800;
+  padding: 9px;
+  background-color: #000;
+  color:#fff;
+    
+    margin: 10px;
+transform: scale(1);
+transition: transform background-color ease-in 0.4s;
+}
+ #seguir_compra:hover , #seguir_compra:active{
+transform: scale(0.9);
+background-color: #272323;
+ }
+ #seguir_compra:active{
+    background-color: #272323;
+    transform: scale(1.2);
+ }
+ #finalizar_compra{
+    font-size: 1em;
+    font-family: Montserrat;
+    font-weight: 800;
+    padding: 9px;
+    background-color: #000;
+    color:#fff;
+    
+      margin: 10px;
+      transform: scale(1);
+      transition: transform ease-in 0.4s;
+    }
+ #finalizar_compra:hover,  #finalizar_compra:active{
+    transform: scale(0.9);
+    background-color: #272323;
+
+     }
+     #finalizar_compra:active{
+        background-color: #272323;
+        transform: scale(1.2);
+     }
+    /*RESPONSIVO DEL MENU*/
+
+@media (max-width:992px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width:768px){
+    #check:checked ~ .icons #menu-icon{
+        display: none;
+    
+    }
+    #check:checked ~ .icons #close-icon{
+        display: block;
+    }
+    .icons{
+        display: inline-flex;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 70px;
+        width: 100%;
+        height: 0rem;
+     opacity: 0.89;
+        background:#c030c0;;
+        backdrop-filter: blur(50px);
+        overflow: hidden;
+        transition: .3s ease;
+       
+    }
+    #check:checked ~ .navbar{
+        height: 17.7rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0 ;
+        text-align: center;
+    transform: translateY(-50px);
+    transition: .3s ease;
+    }
+
+    #check:checked ~ .navbar a{
+        transform: translateY(0px);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+    header.abajo .navbar a{
+        color:#fff;
+    }
+    header.abajo{
+      
+        background-color: #c030c0;;
+            
+    }
+    .navbar a:hover{
+        border-bottom: none;
+    }
+
+    #contenedor{
+        width: 80%;
+    border-radius: 15px;
+    height: 440px;
+        border: solid 2px black;
+        margin-left: auto;
+        margin-right: auto ;
+        margin-top:100px;
+    }
+    
+    #nom_completo{
+        padding: 8px;
+          font-size: 1em;
+          font-family: Montserrat;
+          font-weight: 800;
+          display: inline-flex;
+
+          margin-left: -105px;
+          margin-top: -20px;
+      
+      }
+      #fecha_actual{
+        padding: 8px;
+        font-size: 1em;
+        text-align: left;
+        font-family: Montserrat;
+        font-weight: 800;
+        display: inline-flex;
+        margin-left: 58px;
+        margin-top: 5px;
+    }
+    
+    #no_factura{
+        padding: 8px;
+        font-size: 1em;
+        text-align: left;
+        font-family: Montserrat;
+        font-weight: 800;
+        display: inline-flex;
+        margin-left: 58px;
+        margin-top: 5px;
+    }
+    
+    #id_cliente{
+        padding: 8px;
+        font-size: 1em;
+        text-align: left;
+        font-family: Montserrat;
+        font-weight: 800;
+        display: inline-flex;
+        margin-left: 58px;
+        margin-top: 5px;
+        
+    }
+      #Direccion{
+          padding: 8px ;
+          font-size: 1em;
+          font-family: Montserrat;
+          font-weight: 800;
+       display: inline-flex;
+
+       margin-left: -105px;
+       margin-top: 164px;
+      }
+      
+      
+      #Telefono{
+          padding: 8px ;
+          font-size: 1em;
+          font-family: Montserrat;
+          font-weight: 800;
+        display: inline-flex;
+        
+       margin-left: -105px;
+       margin-top: 10px;
+      }
+      
+      
+      #Email{
+          padding: 8px ;
+          font-size: 1em;
+          font-family: Montserrat;
+          font-weight: 800;
+          
+          display: inline-flex;
+          
+       margin-left: -149px;
+       margin-top: 10px;
+      }
+      .tabla_datos{
+        margin-top: 30px;
+      
+        margin-left: 15px;
+        margin-right: auto;
+        width: 80%;
+        
+    }
+
+    #seguir_compra{
+        font-size: 1em;
+        font-family: Montserrat;
+        font-weight: 800;
+        padding: 9px;
+        background-color: #000;
+        color:#fff;
+          
+          margin: 10px;
+      transform: scale(1);
+      transition: transform background-color ease-in 0.4s;
+
+      margin-left: -25px;
+      }
+       #finalizar_compra{
+          font-size: 1em;
+          font-family: Montserrat;
+          font-weight: 800;
+          padding: 9px;
+          background-color: #000;
+          color:#fff;
+          width: 190px;
+            margin: 10px;
+            transform: scale(1);
+            transition: transform ease-in 0.4s;
+            margin-left: 10px;
+          }
+          
+#botoncito4{
+    display: block;
+    position: absolute;
+    margin-left: 100px;
+}
+#botoncito3{
+    display: none;
+    position: absolute;
+   
+}
+.us{
+    font-family:Montserrat;
+    font-size: 1.1em;
+    color:#fff;
+    margin: 0;
+    margin-right: 0;
+    position: absolute;
+    margin-left:170px;
+    
+    text-align: center;
+ cursor: pointer;
+
+}
+
+
+.overlay {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.popup {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 85%;
+    
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+}
+
+

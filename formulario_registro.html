@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>Contactanos- Crepas Calif</title>
+    <link rel="shortcut icon" href="logo nuevo_preview_rev_3 (1).png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos_registro.css">
+    <script src="registros2.js"></script>
+</head>
+<body>
+    
+    
+<img src="personita.jpg" class="imagem">
+        <div id="contenedor">
+            
+            <h1>REGISTRO NUEVO USUARIO</h1>
+                    <form method="POST" action="registrar1.php" class="form-register" onsubmit="return validar()">
+                        <img src="icono3.jpeg" class="img2">
+                     <h2 class="form_titulo">Crea una cuenta gratis</h2>
+                     <div class="contenedor-inputs">
+<input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" oninput="validarInput(event)">
+<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="input-48" oninput="validarInput(event)">
+
+<input type="email" id="correo" name="correo" placeholder="Correo" class="input-100" >
+
+<input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-100" >
+
+<input type="text" id="usuario" name="edad" placeholder="Edad" class="input-49" >
+
+
+
+<input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="input-49">
+
+<input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-49">
+<div class="password-container">
+<img src="ojo.jpeg" alt="Mostrar Contraseña" class="ojo" id="ojo1">
+</div>
+
+<input type="password" id="clave2" name="clave2" placeholder="Reafirma Contraseña" class="input-49" >
+<div class="password-container">
+<img src="ojo.jpeg" alt="Mostrar Contraseña" class="ojo" id="ojo2">
+</div>
+
+                        
+<input type="submit" value="REGISTRAR" class="btn-enviar">
+                    <p class="form-link">
+                        ¿Ya tienes Cuenta? <a href="contacto.html" >INICIA SESION</a></p>
+                    </div>
+                </form>
+            </div>
+            
+
+
+
+<iframe src="footer.html" frameborder="0" class="footer"></iframe>
+
+
+<script src="script_principal.js" ></script>
+
+<script>
+    var getimport = document.querySelector('link[rel="import"]').import;
+var getcontent = getimport.import.querySelector("#pie");
+document.body.appendChild(document.importNode(getcontent,true));
+</script>
+
+<script>
+    function validarInput(e) {
+           var valor = e.target.value;
+           var soloLetras = /^[A-Za-z\s]+$/;
+           if (!soloLetras.test(valor)) {
+               e.target.value = valor.slice(0, -1);
+           }
+       }
+   
+   </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const passwordField = document.getElementById('clave');
+    const togglePassword = document.getElementById('ojo1');
+
+    togglePassword.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            togglePassword.classList.remove('fa-eye-slash');
+            togglePassword.classList.add('fa-eye');
+        } else {
+            passwordField.type = 'password';
+            togglePassword.classList.remove('fa-eye');
+            togglePassword.classList.add('fa-eye-slash');
+        }
+    });
+});
+   </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const passwordField = document.getElementById('clave2');
+    const togglePassword = document.getElementById('ojo2');
+
+    togglePassword.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            togglePassword.classList.remove('fa-eye-slash');
+            togglePassword.classList.add('fa-eye');
+        } else {
+            passwordField.type = 'password';
+            togglePassword.classList.remove('fa-eye');
+            togglePassword.classList.add('fa-eye-slash');
+        }
+    });
+});
+   </script>
+</body>
+</html>

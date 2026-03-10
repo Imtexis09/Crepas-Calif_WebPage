@@ -1,0 +1,259 @@
+#radio1:checked ~ .first{
+    margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+        }
+        #radio3:checked ~ .first{
+            margin-left: -40%;
+            }
+            
+            #radio1_2:checked ~ .first2{
+                margin-left: 0;
+                }
+                #radio2_2:checked ~ .first2{
+                    margin-left: -20%;
+                    }
+                    #radio3_2:checked ~ .first2{
+                        margin-left: -40%;
+                        }
+    
+                        #radio1_3:checked ~ .first3{
+                            margin-left: 0;
+                            }
+                            #radio2_3:checked ~ .first3{
+                                margin-left: -20%;
+                                }
+                                #radio3_3:checked ~ .first3{
+                                    margin-left: -40%;
+                                    }
+                       #radio1_4:checked ~ .first4{
+                            margin-left: 0;
+                            }
+                            #radio2_4:checked ~ .first4{
+                                margin-left: -20%;
+                                }
+                                #radio3_4:checked ~ .first4{
+                                    margin-left: -40%;
+                                    }   
+                     #radio1_5:checked ~ .first5{
+                            margin-left: 0;
+                            }
+                            #radio2_5:checked ~ .first5{
+                                margin-left: -20%;
+                                }
+                                #radio3_5:checked ~ .first5{
+                                    margin-left: -40%;
+                                    }  
+                                    #radio1_6:checked ~ .first6{
+                                        margin-left: 0;
+                                        }
+                                        #radio2_6:checked ~ .first6{
+                                            margin-left: -20%;
+                                            }
+                                            #radio3_6:checked ~ .first6{
+                                                margin-left: -40%;
+                                                }         
+                                  #radio1_7:checked ~ .first7{
+                                        margin-left: 0;
+                                        }
+                                        #radio2_7:checked ~ .first7{
+                                            margin-left: -20%;
+                                            }
+                                            #radio3_7:checked ~ .first7{
+                                                margin-left: -40%;
+                                                }    
+    
+                                                #radio1_8:checked ~ .first8{
+                                                    margin-left: 0;
+                                                    }
+                                                    #radio2_8:checked ~ .first8{
+                                                        margin-left: -20%;
+                                                        }
+                                                        #radio3_8:checked ~ .first8{
+                                                            margin-left: -40%;
+                                                            } 
+                                              #radio1_9:checked ~ .first9{
+                                                    margin-left: 0;
+                                                    }
+                                                    #radio2_9:checked ~ .first9{
+                                                        margin-left: -20%;
+                                                        }
+                                                        #radio3_9:checked ~ .first9{
+                                                            margin-left: -40%;
+                                                            }   
+    
+                                                            #radio1_10:checked ~ .first10{
+                                                                margin-left: 0;
+                                                                }
+                                                                #radio2_10:checked ~ .first10{
+                                                                    margin-left: -20%;
+                                                                    }
+                                                                    #radio3_10:checked ~ .first10{
+                                                                        margin-left: -40%;
+                                                                        }   
+                                                            #radio1_11:checked ~ .first11{
+                                                                margin-left: 0;
+                                                                }
+                                                                #radio2_11:checked ~ .first11{
+                                                                    margin-left: -20%;
+                                                                    }
+                                                                    #radio3_11:checked ~ .first11{
+                                                                        margin-left: -40%;
+                                                                        }
+                                                                        
+                                                                        #radio1_12:checked ~ .first12{
+                                                                            margin-left: 0;
+                                                                            }
+                                                                            #radio2_12:checked ~ .first12{
+                                                                                margin-left: -20%;
+                                                                                }
+                                                                                #radio3_12:checked ~ .first12{
+                                                                                    margin-left: -40%;
+                                                                                    } 
+    
+    
+    
+    
+            #radio1_13:checked ~ .first13{
+             margin-left: 0;
+                                }
+            #radio2_13:checked ~ .first13{
+            margin-left: -20%;
+             }
+          #radio3_13:checked ~ .first13{
+            margin-left: -40%;
+              } 
+              #radio1_14:checked ~ .first14{
+                margin-left: 0;
+                                   }
+               #radio2_14:checked ~ .first14{
+               margin-left: -20%;
+                }
+             #radio3_14:checked ~ .first14{
+               margin-left: -40%;
+                 } 
+
+
+
+
+                 #radio1_15:checked ~ .first15{
+                    margin-left: 0;
+                                       }
+                   #radio2_15:checked ~ .first15{
+                   margin-left: -20%;
+                    }
+                 #radio3_15:checked ~ .first15{
+                   margin-left: -40%;
+                     } 
+
+                     
+                 #radio1_16:checked ~ .first16{
+                    margin-left: 0;
+                                       }
+                   #radio2_16:checked ~ .first16{
+                   margin-left: -20%;
+                    }
+                 #radio3_16:checked ~ .first16{
+                   margin-left: -40%;
+                     } 
+                     #radio1_17:checked ~ .first17{
+                        margin-left: 0;
+                                           }
+                       #radio2_17:checked ~ .first17{
+                       margin-left: -20%;
+                        }
+                     #radio3_17:checked ~ .first17{
+                       margin-left: -40%;
+                         } 
+
+
+
+                         #radio1_18:checked ~ .first18{
+                            margin-left: 0;
+                                               }
+                           #radio2_18:checked ~ .first18{
+                           margin-left: -20%;
+                            }
+                         #radio3_18:checked ~ .first18{
+                           margin-left: -40%;
+                             } 
+
+                             #radio1_19:checked ~ .first19{
+                                margin-left: 0;
+                                                   }
+                               #radio2_19:checked ~ .first19{
+                               margin-left: -20%;
+                                }
+                             #radio3_19:checked ~ .first19{
+                               margin-left: -40%;
+                                 } 
+
+                                 #radio1_20:checked ~ .first20{
+                                    margin-left: 0;
+                                                       }
+                                   #radio2_20:checked ~ .first20{
+                                   margin-left: -20%;
+                                    }
+                                 #radio3_20:checked ~ .first20{
+                                   margin-left: -40%;
+                                     } 
+
+                                     #radio1_21:checked ~ .first21{
+                                        margin-left: 0;
+                                                           }
+                                       #radio2_21:checked ~ .first21{
+                                       margin-left: -20%;
+                                        }
+                                     #radio3_21:checked ~ .first21{
+                                       margin-left: -40%;
+                                         } 
+                                         #radio1_22:checked ~ .first22{
+                                            margin-left: 0;
+                                                               }
+                                           #radio2_22:checked ~ .first22{
+                                           margin-left: -20%;
+                                            }
+                                         #radio3_22:checked ~ .first22{
+                                           margin-left: -40%;
+                                             } 
+                                             #radio1_22:checked ~ .first22{
+                                                margin-left: 0;
+                                                                   }
+                                               #radio2_22:checked ~ .first22{
+                                               margin-left: -20%;
+                                                }
+                                             #radio3_22:checked ~ .first22{
+                                               margin-left: -40%;
+                                                 } 
+
+                                                 #radio1_23:checked ~ .first23{
+                                                    margin-left: 0;
+                                                                       }
+                                                   #radio2_23:checked ~ .first23{
+                                                   margin-left: -20%;
+                                                    }
+                                                 #radio3_23:checked ~ .first23{
+                                                   margin-left: -40%;
+                                                     } 
+                                                     
+                                                     #radio1_24:checked ~ .first24{
+                                                        margin-left: 0;
+                                                                           }
+                                                       #radio2_24:checked ~ .first24{
+                                                       margin-left: -20%;
+                                                        }
+                                                     #radio3_24:checked ~ .first24{
+                                                       margin-left: -40%;
+                                                         } 
+
+                                                         #radio1_25:checked ~ .first25{
+                                                            margin-left: 0;
+                                                                               }
+                                                           #radio2_25:checked ~ .first25{
+                                                           margin-left: -20%;
+                                                            }
+                                                         #radio3_25:checked ~ .first25{
+                                                           margin-left: -40%;
+                                                             } 
+                                 

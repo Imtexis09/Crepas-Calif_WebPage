@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura - Crepas Calif</title>
+    <link rel="stylesheet" href="pagina_datos.css">
+
+    <link rel="shortcut icon" href="logo nuevo_preview_rev_3 (1).png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/ebae95e142.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5b728b9248.js" crossorigin="anonymous"></script>
+   
+
+
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+   <script src="https://kit.fontawesome.com/5b728b9248.js" crossorigin="anonymous"></script>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+   <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js
+"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css
+" rel="stylesheet">
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+<link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+    
+
+
+    <header class="header">
+
+    
+        <i class='bx bxs-user-circle' id="botoncito4" ></i>
+        
+        
+        
+        <a href="#" class="logo"><img src="logo nuevo_preview_rev_3 (1).png" alt="" id="login"></a>
+        
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        
+        <nav class="navbar" id="nuevo">
+        <a href="paginaprincipal.php" style="--i:0;">Inicio</a>
+        <a href="conocenos.php" style="--i:1;">Conocenos</a>
+        <a href="menup.php" style="--i:2;" id="">Menú</a>
+        <a href="galeria.php" style="--i:3;" id="">Galería</a>
+        <a href="formulario_contacto.php" style="--i:4;" id="">Contactanos</a>
+        
+        </nav>
+        
+        
+        <i class='bx bxs-user-circle' id="botoncito3"></i>
+        
+        <div  class="us">
+      <!---
+    
+     <?php
+        echo
+        $_SESSION['nombre']." ".
+        $_SESSION['apellidos'];
+        ?>
+    
+    --> 
+        </div>
+        </header>
+        
+        
+        
+        
+        <div id="contenedor">
+                    
+        <div id="titulo_factura">
+            FACTURA
+        </div>
+
+
+    <div class="datos_general">
+
+  
+        <div id="datos_negocio">
+
+<div id="logo">
+    <img src="logo nuevo_preview_rev_3 (1).png" alt="" id="logo_factura">
+</div>
+
+<div id="fecha_actual">
+    Fecha actual:
+
+    <div class="insertar_fecha">
+
+    </div>
+</div>
+
+<div id="no_factura">
+    No° de Factura:
+    <div class="insertar_factura">
+
+    </div>
+</div>
+
+<div id="id_cliente">
+    ID del Cliente: 
+    <div class="insertar_id">  </div>
+</div>
+
+        </div>
+        
+
+        <div id="datos_usuario">
+
+        <div id="nom_completo">
+
+            Nombre del Usuario:
+            <div id="nombre"></div>
+            <div id="apellidos"></div>
+        </div>
+
+        <div id="Direccion">
+Direccion:
+
+<div class="insertar_direccion"></div>
+
+        </div>
+
+        <div id="Telefono">
+Telefono:
+            <div class="insertar_telefono"></div>
+        </div>
+
+        <div id="Email">
+Email:
+<div class="insertar_email"></div>
+        </div>
+
+
+        </div>
+    </div>
+
+        </div>
+        
+<div id="contenedor_fechas">
+
+
+    <div class="forma_pago">
+        <div class="titulo_pago">Condiciones de pago</div>
+
+        <div class="selecionar_pago">
+            <select name="pago" id="pago">
+
+                <option value="">
+
+                </option>
+
+
+                <option value="Efectivo">
+                    Efectivo
+                </option>
+    
+                <option value="Tarjeta">
+            Tarjeta</option>
+    
+            </select>
+        </div>
+       
+    </div>
+
+    <div class="fecha_ven">
+
+        <div class="titulo_fecha">
+Fecha de vencimiento
+        </div>
+        <div id="fecha_vencido">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+        <div class="tabla_datos" id="tabla_datos">
+
+<div id="titulo_ticket" class="titulo_ticket">Ticket de compra</div>
+        
+            <table class="datos_insertados" id="datos_insertados">
+                <thead>
+
+                    <tr>
+                        <th>Cantidad</th>
+                        <th id="descripcion">Decripcion</th>
+                        <th>Precio por unidad</th>
+                        <th>Total de linea</th>
+                    </tr>
+    
+                </thead>
+
+                <tbody id="productosContainer">
+
+                    <tr>
+                        <td>xd</td>
+                        <td>xd</td>
+                    <td>xd</td>
+                        <td>xd</td>
+                    </tr>
+
+                </tbody>
+          
+
+
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>SUBTOTAL</td>
+<td id="insertar_sub"></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td>IMPUESTO SOBRE LAS VENTAS (IVA)</td>
+    <td id="insertar_IVA"></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td>TOTAL</td>
+        <td id="insertar_total_compra"></td>
+        </tr>
+
+</tbody>
+
+
+            </table>
+
+        </div>
+
+
+
+        <div class="grupo_botones">
+
+
+            <button id="seguir_compra">Seguir comprando</button>
+            <button id="finalizar_compra">Finalizar compra</button>
+        </div>
+
+        
+        <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+        
+        
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>¡BIENVENIDO!</h3>
+                <h4>   <div id="usuario">
+           
+           <!--
+             <?php
+        echo $_SESSION['nombre']." ".
+        $_SESSION['apellidos'];
+                ?>    
+           -->
+           
+           
+            </div></h4>
+            
+              
+        
+                    <a href="#" id="Cuenta">Cerrar Sesión</a>
+                 
+            </div>
+        </div>
+        
+        
+        
+        <script src="script_cargar.js"></script>
+        
+        
+        
+        <script src="cerrar_sesion.js"></script>
+        
+        <script src="popup.js"></script>
+        
+        <script>
+        const btnAbrirPopup4 = document.querySelector(".us");
+        
+        btnAbrirPopup4.addEventListener('click', function(){
+            overlay.classList.add('active');
+            popup.classList.add('active');
+        });
+        
+        </script>
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+
+
+</body>
+</html>

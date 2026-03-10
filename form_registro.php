@@ -1,0 +1,381 @@
+<?php
+session_start();
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registrate - Crepas Calif</title>
+    <link rel="shortcut icon" href="logo nuevo_preview_rev_3 (1).png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+
+    <script src="registros2.js"> </script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+
+    
+        <i class='bx bxs-user-circle' id="botoncito4" ></i>
+
+        
+
+        <a href="#" class="logo"><img src="logo nuevo_preview_rev_3 (1).png" alt="" id="login"></a>
+      
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+
+    <nav class="navbar" id="normal">
+        <a href="INICIO_sesion2.php" style="--i:0;">Inicio</a>
+        <a href="conocenos_sesion.php" style="--i:1;">Conocenos</a>
+    </nav>
+
+
+    <nav class="navbar" id="nuevo">
+        <a href="INICIO.html" style="--i:0;">Inicio</a>
+        <a href="Historia.html" style="--i:1;">Conocenos</a>
+        <a href="#" style="--i:2;" id="">Menú</a>
+        <a href="#" style="--i:3;" id="">Galería</a>
+        <a href="form.html" style="--i:4;" id="">Contactanos</a>
+
+    </nav>
+
+  
+    <i class='bx bxs-user-circle' id="botoncito3"></i>
+
+    <div id="usuario" class="us">
+        Iniciar Sesión
+        </div>
+     </header>
+
+
+
+
+
+
+
+<img src="login.jpg" class="imagem">
+        <div id="contenedor">
+            
+         
+                    <form method="POST" action="registrar_bd.php" class="form-register" onsubmit="return validar()">
+                        <i class='bx bxs-user-circle' id="user"></i>
+                     <h2 class="form_titulo">Crea una cuenta gratis</h2>
+
+
+
+
+
+                     <div class="contenedor-inputs">
+
+<div class="form_group-48">
+    <input type="text" id="nombre" class="input-48" placeholder=" " name="nombre">
+    <label for="nombre" class="form_label">Nombre:</label>
+    <span class="form_line"></span>
+</div>
+
+
+
+<div class="form_group-48">
+    <input type="text" id="apellidos" class="input-48" placeholder=" "  name="apellidos">
+    <label for="apellidos" class="form_label">Apellidos:</label>
+    <span class="form_line"></span>
+</div>
+
+
+
+
+<div class="form_group-100">
+    <input type="email" id="correo" class="input-100" placeholder=" " name="email">
+    <label for="correo" class="form_label">Correo:</label>
+    <span class="form_line"></span>
+</div>
+
+
+
+<div class="form_group-49">
+    <input type="text" id="edad" class="input-49" placeholder=" " name="edad">
+    <label for="edad" class="form_label">Edad:</label>
+    <span class="form_line"></span>
+</div>
+
+
+
+
+<div class="form_group-49">
+    <input type="text" id="telefono" class="input-49" placeholder=" " name="telefono">
+    <label for="telefono" class="form_label">Telefono:</label>
+    <span class="form_line"></span>
+</div>
+
+
+
+
+
+<div class="form_group-100">
+    <input type="text" id="usuario" class="input-100" placeholder=" " name="usuario">
+    <label for="usuario" class="form_label">Usuario:</label>
+    <span class="form_line"></span>
+</div>
+
+
+<div class="form_group-49">
+    <input type="password" id="clave" class="input-49" placeholder=" " name="clave">
+    <label for="clave" class="form_label">Contraseña:</label>
+    <span class="form_line"></span>
+</div>
+
+<div class="password-container" id="ojo1a" style="display: none;">
+<img src="ojo.jpeg" alt="Mostrar Contraseña" class="ojo" id="ojo1">
+</div>
+
+<div class="password-container"  id="ojo1c">
+    <img src="cerrar-ojo (1).png" alt="Mostrar Contraseña" class="ojo" id="ojo1abrir">
+    </div>
+
+
+<div class="form_group-49">
+    <input type="password" id="clave2" class="input-49" placeholder=" ">
+    <label for="clave2" class="form_label">Reafirmar Contraseña:</label>
+    <span class="form_line"></span>
+</div>
+
+
+<div class="password-container" id="ojo2a" style="display: none;">
+<img src="ojo.jpeg" alt="Mostrar Contraseña" class="ojo" id="ojo2">
+</div>
+
+
+<div class="password-container"  id="ojo2c">
+    <img src="cerrar-ojo (1).png" alt="Mostrar Contraseña" class="ojo" id="ojo2cerrar">
+    </div>
+
+
+                        
+<input type="submit" value="REGISTRARSE" class="btn-enviar" onclick="validar()">
+
+     <div class="form-link">
+    ¿Ya tienes Cuenta? <div id="activar">INICIA SESION</div></div>
+
+
+                    </div>
+                </form>
+            </div>
+            
+
+
+
+<iframe src="footer.html" frameborder="0" class="footer"></iframe>
+
+
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>INICIA SESIÓN</h3>
+        <h4>y navega sin limites en el sitio web.</h4>
+        
+        
+        <?php
+
+include 'conexion.php';
+include 'controlador.php';
+?>
+
+
+
+        <form  method="post" class="form" id="form" onsubmit="return validar_sesion()">
+            <div class="contenedor-inputs">
+                <input type="text" placeholder="Usuario" name="usuario" id="us_r">
+                <input type="password" placeholder="Contraseña"  name="clave" id="cl_r">
+            </div>
+
+            
+           
+
+            <input type="submit" class="btn-submit" value="Iniciar Sesion" name="btn-submit" id="enviar" onclick="validar_sesion()" >
+
+        
+        </form>
+    </div>
+</div>
+
+
+
+<script src="popup.js"></script> 
+
+
+
+
+
+<script src="script_principal.js" ></script>
+
+<script>
+    var getimport = document.querySelector('link[rel="import"]').import;
+var getcontent = getimport.import.querySelector("#pie");
+document.body.appendChild(document.importNode(getcontent,true));
+</script>
+
+<script>
+    function validarInput(e) {
+           var valor = e.target.value;
+           var soloLetras = /^[A-Za-z\s]+$/;
+           if (!soloLetras.test(valor)) {
+               e.target.value = valor.slice(0, -1);
+           }
+       }
+   
+   </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const passwordField = document.getElementById('clave');
+    const togglePassword = document.getElementById('ojo1');
+
+    const togglePassword2 = document.getElementById('ojo1abrir');
+
+
+    var cerrarojo = document.getElementById('ojo1c');
+    var abrirojo = document.getElementById('ojo1a');
+
+    togglePassword.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            togglePassword.classList.remove('fa-eye-slash');
+            togglePassword.classList.add('fa-eye');
+
+            cerrarojo.style.display = "none";
+            abrirojo.style.display = "block";
+        } else {
+            passwordField.type = 'password';
+            togglePassword.classList.remove('fa-eye');
+            togglePassword.classList.add('fa-eye-slash');
+
+            cerrarojo.style.display = "block";
+            abrirojo.style.display = "none";
+        }
+    });
+
+
+    togglePassword2.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            togglePassword.classList.remove('fa-eye-slash');
+            togglePassword.classList.add('fa-eye');
+            cerrarojo.style.display = "none";
+            abrirojo.style.display = "block";
+        } else {
+            passwordField.type = 'password';
+            togglePassword.classList.remove('fa-eye');
+            togglePassword.classList.add('fa-eye-slash');
+
+            cerrarojo.style.display = "block";
+            abrirojo.style.display = "none";
+        }
+    });
+
+
+});
+   </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const passwordField = document.getElementById('clave2');
+    const togglePassword = document.getElementById('ojo2');
+
+    const togglePassword2 = document.getElementById('ojo2cerrar');
+
+
+var cerrarojo = document.getElementById('ojo2c');
+var abrirojo = document.getElementById('ojo2a');
+
+    togglePassword.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            togglePassword.classList.remove('fa-eye-slash');
+            togglePassword.classList.add('fa-eye');
+
+
+            cerrarojo.style.display = "none";
+            abrirojo.style.display = "block";
+
+        } else {
+            passwordField.type = 'password';
+            togglePassword.classList.remove('fa-eye');
+            togglePassword.classList.add('fa-eye-slash');
+
+            cerrarojo.style.display = "block";
+            abrirojo.style.display = "none";
+        }
+    });
+
+
+
+    togglePassword2.addEventListener('click', function () {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            togglePassword.classList.remove('fa-eye-slash');
+            togglePassword.classList.add('fa-eye');
+
+            cerrarojo.style.display = "none";
+            abrirojo.style.display = "block";
+        } else {
+            passwordField.type = 'password';
+            togglePassword.classList.remove('fa-eye');
+            togglePassword.classList.add('fa-eye-slash');
+
+            cerrarojo.style.display = "block";
+            abrirojo.style.display = "none";
+        }
+    });
+
+
+});
+   </script>
+
+<script>
+
+var btnAbrirPopuplink = document.querySelector("#activar");
+
+    btnAbrirPopuplink.addEventListener('click', function(){
+	overlay.classList.add('active');
+	popup.classList.add('active');
+});
+
+</script>
+
+
+
+<script>
+    const btnAbrirPopup4 = document.querySelector(".us");
+    
+    btnAbrirPopup4.addEventListener('click', function(){
+        overlay.classList.add('active');
+        popup.classList.add('active');
+    });
+    
+    </script>
+
+
+
+<script src="validacion_sesion.js"></script>
+  
+</body>
+</html>
