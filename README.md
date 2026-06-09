@@ -63,6 +63,6 @@ Ejecutar la aplicación:
 
 Abre tu navegador web e ingresa a: http://localhost/crepas-calif/
 
-##📈 Impacto Académico
+## 📈 Impacto Académico
 Este proyecto fue desarrollado bajo los estrictos requerimientos técnicos de la academia de Programación del CBTIS 03, cumpliendo con los estándares exigidos para la aprobación del módulo de desarrollo de aplicaciones web con almacenamiento de datos persistentes.
    
