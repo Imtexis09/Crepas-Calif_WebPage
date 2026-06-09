@@ -42,26 +42,26 @@ El proyecto fue construido utilizando tecnologías nativas, garantizando un rend
 
 Para ejecutar este proyecto en tu entorno local, asegúrate de tener instalado [XAMPP](https://www.apachefriends.org/).
 
-1. **Clonar el repositorio** dentro de la carpeta raíz de tu servidor local (habitualmente `htdocs` en XAMPP):
+### 1. **Clonar el repositorio** dentro de la carpeta raíz de tu servidor local (habitualmente `htdocs` en XAMPP):
    `cd C:/xampp/htdocs
    git clone [https://github.com/TU_USUARIO/crepas-calif.git](https://github.com/TU_USUARIO/crepas-calif.git)`
-Configurar la Base de Datos:
+### 2. Configurar la Base de Datos:
 
-Abre el panel de control de XAMPP e inicia los módulos de Apache y MySQL.
+ * Abre el panel de control de XAMPP e inicia los módulos de Apache y MySQL.
 
-Dirígete a http://localhost/phpmyadmin/ en tu navegador.
+ * Dirígete a http://localhost/phpmyadmin/ en tu navegador.
 
-Crea una nueva base de datos (por ejemplo, crepas_calif).
+ * Crea una nueva base de datos (por ejemplo, crepas_calif).
 
-Importa el archivo .sql que se encuentra en la carpeta del proyecto (ej. database/crepas_calif.sql).
+ * Importa el archivo .sql que se encuentra en la carpeta del proyecto (ej. database/crepas_calif.sql).
 
-Ajustar la conexión (si es necesario):
+ * Ajustar la conexión (si es necesario):
 
-Revisa el archivo de configuración de conexión en PHP (habitualmente conexion.php o similar) y asegúrate de que el usuario (root), la contraseña (vacía por defecto) y el nombre de la base de datos coincidan con tu configuración local.
+ * Revisa el archivo de configuración de conexión en PHP (habitualmente conexion.php o similar) y asegúrate de que el usuario (root), la contraseña (vacía por defecto) y el nombre de la base de datos coincidan con tu configuración local.
 
-Ejecutar la aplicación:
+### Ejecutar la aplicación:
 
-Abre tu navegador web e ingresa a: http://localhost/crepas-calif/
+ * Abre tu navegador web e ingresa a: http://localhost/crepas-calif/
 
 ## 📈 Impacto Académico
 Este proyecto fue desarrollado bajo los estrictos requerimientos técnicos de la academia de Programación del CBTIS 03, cumpliendo con los estándares exigidos para la aprobación del módulo de desarrollo de aplicaciones web con almacenamiento de datos persistentes.
