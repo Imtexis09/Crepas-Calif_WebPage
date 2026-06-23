@@ -1,68 +1,66 @@
 # Crepas Calif 🥞✨
 
-¡Bienvenido a **Crepas Calif**! Este es un proyecto de desarrollo web completo (Full-Stack) diseñado y desarrollado para un negocio real de comida, creado originalmente como proyecto integrador para la materia de Programación en el **CBTIS 03** (5° Semestre).
+Welcome to **Crepas Calif**! This is a Full-Stack web application designed and developed for a real food business. It was originally created as a Capstone Project for the Web Programming course during my 5th semester at **CBTIS 03**.
 
-El sitio web combina una interfaz atractiva e informativa para los clientes con un potente sistema de gestión interna (CRUD) para el administrador, simulando la experiencia de una plataforma de comercio electrónico moderna.
-
----
-
-## 🚀 Características Principales
-
-El proyecto se divide en dos grandes secciones: la experiencia del usuario final y el panel de administración.
-
-### 🌐 Sitio Público (Experiencia del Cliente)
-* **Inicio:** Pantalla de bienvenida con la identidad de la marca.
-* **Conócenos:** Sección institucional que detalla la historia, misión y visión del negocio.
-* **Galería:** Espacio visual interactivo para mostrar la calidad de los productos.
-* **Contáctanos:** Formulario y datos de contacto para los clientes.
-* **Menú Interactivo (Tipo Amazon):** Una tienda virtual donde los usuarios pueden explorar los productos disponibles en tiempo real y gestionar su pedido mediante un **Carrito de Compras** dinámico programado en JavaScript.
-
-### 🔐 Panel de Administración (Sistema CRUD)
-* **Autenticación Protegida:** Inicio de sesión especial y seguro exclusivo para el administrador del negocio.
-* **Control Total de Inventario (CRUD):** El administrador puede:
-  * **Create:** Subir nuevos productos al menú con sus respectivos detalles y precios.
-  * **Read:** Visualizar la lista actualizada de existencias.
-  * **Update:** Modificar información de productos existentes.
-  * **Delete:** Dar de baja productos del menú de manera inmediata.
+The platform combines an attractive, responsive user interface for customers with a robust internal management system (CRUD) for the administrator, replicating the core features of a modern e-commerce platform.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🚀 Key Features
 
-El proyecto fue construido utilizando tecnologías nativas, garantizando un rendimiento óptimo sin depender de frameworks pesados:
+The project is divided into two main modules: the customer-facing store and the secure administration panel.
 
-* **Frontend:** HTML5, CSS3 (Diseño responsivo y estilizado) y **JavaScript (ES6)** para la lógica del carrito de compras y dinamismo de la interfaz.
-* **Backend:** **PHP**, encargado de la lógica del servidor, sesiones de usuario y comunicación con la base de datos.
-* **Base de Datos:** MySQL (gestionada a través de phpMyAdmin).
-* **Entorno de Desarrollo Local:** **XAMPP** (Servidor Apache y MySQL integrado).
+### 🌐 Public Site (Customer Experience)
+* **Home:** Welcome screen showcasing the brand's identity.
+* **About Us:** Institutional section detailing the business's history, mission, and vision.
+* **Gallery:** An interactive visual showcase displaying high-quality product images.
+* **Contact Us:** Information and form for customer inquiries.
+* **Interactive Menu (Amazon-Style):** A virtual store where users can explore available products in real-time and manage their orders using a dynamic **Shopping Cart** built with JavaScript.
+
+### 🔐 Admin Panel (CRUD System)
+* **Secure Authentication:** Protected login gateway exclusively for the business administrator.
+* **Inventory Control (CRUD):** A secure backend interface allowing the administrator to perform operational optimization:
+  * **Create:** Upload new products to the menu with detailed descriptions, images, and pricing.
+  * **Read:** View an updated, real-time list of current inventory.
+  * **Update:** Modify information of existing products for real-time inventory control.
+  * **Delete:** Remove items from the live menu instantly.
 
 ---
 
-## 💻 Instalación y Configuración Local
+## 🛠️ Tech Stack
 
-Para ejecutar este proyecto en tu entorno local, asegúrate de tener instalado [XAMPP](https://www.apachefriends.org/).
+This project was built using native technologies, ensuring optimal performance and lightweight architecture without heavy external frameworks:
 
-### 1. **Clonar el repositorio** dentro de la carpeta raíz de tu servidor local (habitualmente `htdocs` en XAMPP):
-   `cd C:/xampp/htdocs
-   git clone [https://github.com/TU_USUARIO/crepas-calif.git](https://github.com/TU_USUARIO/crepas-calif.git)`
-### 2. Configurar la Base de Datos:
+* **Frontend:** HTML5, CSS3 (Responsive Design), and **JavaScript (ES6)** for the interactive shopping cart and UI dynamics.
+* **Backend:** **PHP** managing server-side logic, user sessions, and secure database communication.
+* **Database:** MySQL (managed via phpMyAdmin).
+* **Local Development Environment:** **XAMPP** (Apache Server and MySQL integration).
 
- * Abre el panel de control de XAMPP e inicia los módulos de Apache y MySQL.
+---
 
- * Dirígete a http://localhost/phpmyadmin/ en tu navegador.
+## 💻 Installation and Local Setup
 
- * Crea una nueva base de datos (por ejemplo, crepas_calif).
+To run this project locally, ensure you have [XAMPP](https://www.apachefriends.org/) installed on your machine.
 
- * Importa el archivo .sql que se encuentra en la carpeta del proyecto (ej. database/crepas_calif.sql).
+### 1. Clone the repository
+Clone the project inside your local server's root directory (usually `htdocs` in XAMPP):
+`cd C:/xampp/htdocs
+git clone [https://github.com/Imtexis09/crepas-calif.git](https://github.com/Imtexis09/crepas-calif.git)`
+### 2. Database Configuration
+* Open the XAMPP Control Panel and start both the **Apache** and **MySQL** modules.
+* Navigate to `http://localhost/phpmyadmin/` in your web browser.
+* Create a new database (e.g., `crepas_calif`).
+* Import the `.sql` file located in the project structure (e.g., `database/crepas_calif.sql`).
 
- * Ajustar la conexión (si es necesario):
+### 3. Connection Setup
+* Review the database connection file in PHP (usually `conexion.php` or config file).
+* Ensure that the credentials user (`root`), password (`""` empty by default), and database name match your local setup.
 
- * Revisa el archivo de configuración de conexión en PHP (habitualmente conexion.php o similar) y asegúrate de que el usuario (root), la contraseña (vacía por defecto) y el nombre de la base de datos coincidan con tu configuración local.
+### 4. Run the Application
+* Open your browser and navigate to: `http://localhost/crepas-calif/`
 
-### Ejecutar la aplicación:
+---
 
- * Abre tu navegador web e ingresa a: http://localhost/crepas-calif/
-
-## 📈 Impacto Académico
-Este proyecto fue desarrollado bajo los estrictos requerimientos técnicos de la academia de Programación del CBTIS 03, cumpliendo con los estándares exigidos para la aprobación del módulo de desarrollo de aplicaciones web con almacenamiento de datos persistentes.
+## 📈 Academic Impact
+This project was developed under the rigorous technical requirements of the CBTIS 03 Programming Academy, successfully meeting the standards established for building web applications with persistent data storage.
    
